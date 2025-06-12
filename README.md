@@ -32,7 +32,7 @@ insurance\_system/
 
 ### ✅ Requirements
 
-- Python 3.7+
+- Python 3.13+
 - No external libraries required
 
 
