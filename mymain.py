@@ -9,21 +9,21 @@ p1 = PolicyProduct("P001", "Health Insurance", 1000)
 p2 = PolicyProduct("P002", "Life Insurance", 800)
 
 # Create two policyholders objects
-alice = PolicyHolder("Alice Johnson", "alice@example.com")
-bob = PolicyHolder("Bob Lee", "bob@example.com")
+joseph = PolicyHolder("Joseph Olamide", "josepholamide@gmail.com")
+david = PolicyHolder("David Ifeanyi", "davidifeanyi@gmail.com")
 
 # Register products
-alice.register_product(p1)
-bob.register_product(p2)
+joseph.register_product(p1)
+david.register_product(p2)
 
-# create two payments objects for late payment, apply penalty and make payment for alice and bob
+# create two payments objects for late payment, apply penalty and make payment for joseph and david
 payment1 = Payment(1000, datetime.now() - timedelta(days=2),"Late Payment")
 payment1.apply_penalty()
-alice.make_payment(payment1)
+joseph.make_payment(payment1)
 
 payment2 = Payment(800, datetime.now(),"Paid")
-bob.make_payment(payment2)
+david.make_payment(payment2)
 
 # Display details
-alice.get_details()
-bob.get_details()
+joseph.get_details()
+david.get_details()
